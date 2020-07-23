@@ -1,0 +1,47 @@
+{
+  "name": "meantodo",
+  "version": "1.0.0",
+  "description": "A Simple MEAN.js Todo Application",
+  "main": "index.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "echo \"******Staring Angular CLI******\" && ng serve",
+    "start:server": "echo \"******Staring Server******\" && nodemon server/server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samyajithm/meanTodo.git"
+  },
+  "keywords": [
+    "MongoDb",
+    "Express.js",
+    "Angular",
+    "Node"
+  ],
+  "author": "Samyajith M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samyajithm/meanTodo/issues"
+  },
+  "homepage": "https://github.com/samyajithm/meanTodo#readme",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.22",
+    "mongoose-sequence": "^5.2.2",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

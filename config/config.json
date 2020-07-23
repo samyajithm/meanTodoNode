@@ -1,0 +1,9 @@
+{
+  "env": {
+    "remoteDb": true,
+    "dbHost": "@ngshop.0h5cq.mongodb.net/meanTodo?retryWrites=true&w=majority",
+    "dbUserName": "ngShop",
+    "dbPassword": "ngShop",
+    "JWT_KEY": "uniquelongkey"
+  }
+}
