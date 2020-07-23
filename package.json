@@ -2,16 +2,11 @@
   "name": "meantodo",
   "version": "1.0.0",
   "description": "A Simple MEAN.js Todo Application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "ng": "ng",
-    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
-    "start:client": "echo \"******Staring Angular CLI******\" && ng serve",
-    "start:server": "echo \"******Staring Server******\" && nodemon server/server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+      "start": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "serve": "nodemon server.js"
   },
   "repository": {
     "type": "git",
